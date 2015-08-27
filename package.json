@@ -1,0 +1,22 @@
+{
+  "name": "ligle-midware",
+  "version": "0.3.0",
+  "description": "midware",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "dependencies": {
+    "ligle-util": "~0.3.0"
+  },
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://git.hijack.moe/crackhopper/ligle-midware.git"
+  },
+  "keywords": [
+    "midware"
+  ],
+  "author": "crackhopper",
+  "license": "ligle"
+}
