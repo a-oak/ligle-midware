@@ -23,8 +23,20 @@ module.exports = function(config){
     res.rd = new Renderer(req,res);
     next();
   };
-
-  exportObj.cfg = cfg;
   exportObj.addRenderer = addRenderer;
+
+  // make前缀代表是生成中间件的工厂
+  var makeFieldChecker = require('./field-checker.js')(ligle);
+  /**
+   * 中间件生成器：生成检查域的中间件。
+   * @method
+   * @param {obj} checkCfg 检查的配置。格式为{fields:checkerName}
+   * @return {function} checkFunc 中间件
+   * @example
+   * makeFieldChecker({nickname:'name',email:'email',phone:'cellphone'})
+  */
+  exportObj.makeFieldChecker = makeFieldChecker;
+  
+  exportObj.cfg = cfg;
   return exportObj;
 };
