@@ -1,5 +1,5 @@
 var ligle={};
-ligle.util = require('ligle-util');
+ligle.util = require('ligle-util')();
 var configure = ligle.util.configure;
 
 var defaultCfg = {
