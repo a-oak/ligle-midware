@@ -12,9 +12,10 @@
     "ligle-db": "~0.4.0",
     "ligle-model": "~0.4.0"
   },
+  "homepage": "https://github.com/a-oak/ligle-midware",
   "repository": {
     "type": "git",
-    "url": "https://git.hijack.moe/crackhopper/ligle-midware.git"
+    "url": "https://github.com/a-oak/ligle-midware.git"
   },
   "keywords": [
     "midware"
